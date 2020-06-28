@@ -4,6 +4,12 @@ require 'json'
 
 class GetRequester
   
+  attr_accessor :get_requester
+  
+  def initialize(get_requester)
+    @get_requester = get_requester
+  end 
+  
  #  URL = "https://learn-co-curriculum.github.io/json-site-example/endpoints/people.json"
  
   def get_response_body
