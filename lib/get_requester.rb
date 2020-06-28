@@ -22,6 +22,5 @@ class GetRequester
   end
 end 
 
-get_request = GetRequester.new.parse_json
 
 
