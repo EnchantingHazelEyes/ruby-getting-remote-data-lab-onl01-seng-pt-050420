@@ -5,9 +5,10 @@ require 'json'
 class GetRequester
   @@all = []
   
-   URL = "https://learn-co-curriculum.github.io/json-site-example/endpoints/people.json"
+#   URL = "https://learn-co-curriculum.github.io/json-site-example/endpoints/people.json"
   
-  def initialize
+  def initialize(URL)
+       URL = "https://learn-co-curriculum.github.io/json-site-example/endpoints/people.json"
     @@all << self
   end 
   
