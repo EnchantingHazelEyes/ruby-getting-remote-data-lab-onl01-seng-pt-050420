@@ -3,9 +3,17 @@ require 'open-uri'
 require 'json'
  
 class GetRequester
- 
- URL = "https://learn-co-curriculum.github.io/json-site-example/endpoints/people.json"
-
+  @@all = []
+  
+   URL = "https://learn-co-curriculum.github.io/json-site-example/endpoints/people.json"
+  
+  def initialize
+    @@all << self
+  end 
+  
+  def self.all
+    @@all
+  end
  
   def get_response_body
     
