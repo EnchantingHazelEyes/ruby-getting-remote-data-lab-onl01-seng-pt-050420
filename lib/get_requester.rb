@@ -24,6 +24,6 @@ class GetRequester
   end
 end 
 
-get_request = GetRequester.new()
+#get_request = GetRequester.new()
 
 
